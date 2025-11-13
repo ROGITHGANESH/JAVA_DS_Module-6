@@ -79,7 +79,8 @@ public class MatrixAddition {
 ```
 
 ## Output:
-<img width="946" height="307" alt="image" src="https://github.com/user-attachments/assets/788462c7-d5b1-4c8f-808c-a5ffced9c82f" />
+
+<img width="422" height="624" alt="513775109-34782319-f865-4fe8-a281-f3aed6852160" src="https://github.com/user-attachments/assets/f2acdaf8-1bf9-4fba-af82-b724d681291b" />
 
 
 
