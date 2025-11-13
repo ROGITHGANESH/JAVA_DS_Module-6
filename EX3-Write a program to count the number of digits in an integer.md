@@ -26,29 +26,38 @@ RegisterNumber: 212223100046
 
 import java.util.Scanner;
 
-public class CountDigitsRecursive {
-    static int countDigits(int n) {
-        if (n == 0)
-            return 0;
-        return 1 + countDigits(n / 10);
-    }
-
+public class CountDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        int n = sc.nextInt();
-        if (n == 0)
-            System.out.println("Number of digits: 1");
-        else
-            System.out.println("Number of digits: " + countDigits(Math.abs(n)));
+        
+     
+        int num = sc.nextInt();
+        
+        int count = 0;
+        int n = Math.abs(num); 
+        
+        
+        if (n == 0) {
+            count = 1;
+        } else {
+            while (n > 0) {
+                n = n / 10;  
+                count++;
+            }
+        }
+        
+        System.out.println("Number of digits: " + count);
+
         sc.close();
     }
 }
+
 ```
 
 ## Output:
 
-<img width="498" height="202" alt="image" src="https://github.com/user-attachments/assets/77fbbc4b-5939-4735-a117-7e1a8f9ceae9" />
+<img width="601" height="242" alt="image" src="https://github.com/user-attachments/assets/132a7a2a-95ea-4d65-a908-0268fc16eb32" />
+
 
 
 
